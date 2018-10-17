@@ -7,7 +7,7 @@ int main(void) {
 	scanf("%d",&a);
 	printf("\n");
 	printf("Divisor of %d are : ",a);
-	for(i=1;i<a;i++){
+	for(i=1;i<=a;i++){
 		if(a % i ==0){
 			printf("%d",i);
 			printf(" ");
