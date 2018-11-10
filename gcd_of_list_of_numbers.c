@@ -31,7 +31,7 @@ void main(){
 		    		if(a[i]%j==0){
 		    			count++;
 		    			gcd = j;
-		    			if(count==b){
+		    			if(count==b-1){
 		    				max=1;
 		    				break;
 		    			}
