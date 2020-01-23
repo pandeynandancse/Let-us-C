@@ -1,0 +1,128 @@
+https://www.geeksforgeeks.org/structures-c/
+
+
+
+
+
+
+
+                                                      How to declare structure variables?
+                                                      
+// A variable declaration with structure declaration. 
+struct Point 
+{ 
+   int x, y; 
+} p1;  // The variable p1 is declared with 'Point' 
+  
+  
+// A variable declaration like basic data types 
+struct Point 
+{ 
+   int x, y; 
+};  
+  
+int main() 
+{ 
+   struct Point p1;  // The variable p1 is declared like a normal variable 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                How to initialize structure members?
+
+struct Point 
+{ 
+   int x, y; 
+};  
+  
+int main() 
+{ 
+   // A valid initialization. member x gets value 0 and y 
+   // gets value 1.  The order of declaration is followed. 
+   struct Point p1 = {0, 1};  
+}
+
+
+
+
+
+
+
+                                          How to access structure elements?
+
+struct Point 
+{ 
+   int x, y; 
+}; 
+  
+int main() 
+{ 
+   struct Point p1 = {0, 1}; 
+  
+   // Accessing members of point p1 
+   p1.x = 20; 
+   printf ("x = %d, y = %d", p1.x, p1.y); 
+  
+   return 0; 
+}
+
+
+
+
+
+                                  What is designated Initialization?
+
+
+struct Point 
+{ 
+   int x, y, z; 
+}; 
+  
+int main() 
+{ 
+   // Examples of initialization using designated initialization 
+   struct Point p1 = {.y = 0, .z = 1, .x = 2}; 
+   struct Point p2 = {.x = 20}; 
+  
+   printf ("x = %d, y = %d, z = %d\n", p1.x, p1.y, p1.z); 
+   printf ("x = %d", p2.x); 
+   return 0; 
+} 
+
+
+
+
+
+
+
+
+                                                  What is an array of structures?
+
+struct Point 
+{ 
+   int x, y; 
+}; 
+  
+int main() 
+{ 
+   // Create an array of structures 
+   struct Point arr[10]; 
+  
+   // Access array members 
+   arr[0].x = 10; 
+   arr[0].y = 20; 
+  
+   printf("%d %d", arr[0].x, arr[0].y); 
+   return 0; 
+} 
