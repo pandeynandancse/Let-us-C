@@ -1,8 +1,7 @@
 https://www.geeksforgeeks.org/enumeration-enum-c/
 
 
-#include<stdio.h> 
-  
+#include<stdio.h>   
 enum week{Mon, Tue, Wed, Thur, Fri, Sat, Sun}; 
   
 int main() 
