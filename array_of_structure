@@ -1,7 +1,7 @@
                           https://www.javatpoint.com/array-of-structures-in-c   
    
    
-   
+ 
    #include<stdio.h>  
     #include <string.h>    
     struct student{    
